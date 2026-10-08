@@ -25,8 +25,12 @@ services:
     build:
       context: ./backend
 
-    env_file:
-      - ./backend/.env
+    environment:
+      DB_USER: healthuser
+      DB_PASSWORD: healthpassword
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_NAME: health_insurance
 
     depends_on:
       - db
