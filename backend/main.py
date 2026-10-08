@@ -12,7 +12,7 @@ app.include_router(explorer_router)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"], # Allow your React app
+    allow_origins=["http://44.200.205.12"], # Allow your React app
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
